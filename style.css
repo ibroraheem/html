@@ -130,3 +130,100 @@ input[type=submit] {
     align-items: center;
     text-align: center;
 }
+
+.image1:hover {
+    box-shadow: black 1px 1px 5px;
+    animation-name: rot;
+    animation-duration: 8s;
+}
+
+@keyframes rot {
+    /* from{opacity: 0.0;}
+  to{opacity: 1;} */
+    0% {
+        transform: rotate(90deg);
+    }
+    10% {
+        opacity: 0.1;
+    }
+    30% {
+        opacity: 0.3;
+    }
+    50% {
+        opacity: 0.5;
+        background: blue;
+    }
+    70% {
+        opacity: 0.7;
+        background: red;
+    }
+    90% {
+        opacity: 0.9;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.title:hover {
+    border: cyan;
+    background-color: cyan;
+}
+
+.image2:hover {
+    animation-name: anim;
+    animation-duration: 8s;
+}
+
+@keyframes anim {
+    0% {
+        transform: rotate(90deg);
+        background: red;
+    }
+    10% {
+        opacity: 0.1;
+        background: orange;
+    }
+    20% {
+        opacity: 0.2;
+        background: yellow;
+    }
+    30% {
+        opacity: 0.3;
+        background: green;
+    }
+    40% {
+        opacity: 0.4;
+        background: blue;
+    }
+    50% {
+        opacity: 0.5;
+        background: indigo;
+    }
+    60% {
+        opacity: 0.7;
+        background: violet;
+    }
+    70% {
+        opacity: 0.7;
+    }
+    80% {
+        opacity: 0.8;
+    }
+    90% {
+        opacity: 0.9;
+    }
+    100% {
+        opacity: 1.0;
+    }
+}
+
+.home:active {
+    background-color: white;
+    color: black;
+}
